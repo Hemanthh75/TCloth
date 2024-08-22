@@ -1,0 +1,101 @@
+#topSection{
+    display: flex;
+    justify-content: space-between;
+}
+
+#icons-desktop {
+    display: flex;
+}
+
+.icon{
+    margin: 0 7px 0 7px;
+}
+
+.navBarItem{
+    color: #693621;
+    font-weight: bolder;
+    margin: 0 65px 0 65px;
+}
+
+#navBarList{
+    margin:auto;
+}
+
+.caroImg{
+    width: 1380px !important;
+}
+
+
+
+
+
+
+@media screen and (min-width: 766px) and (max-width: 997px) {
+
+    .caroImg{
+        width: 700px !important;
+    }
+
+    #navBarList{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .navBarItem{
+        margin: 0 20px 0 20px;
+        font-size: small !important;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 997px) and (max-width: 1204){
+    .caroImg{
+        width: 600px !important;
+    }
+}
+
+
+
+
+
+
+@media screen and (min-width: 997px) {
+    .icons-mobile{
+        display: none;
+    }
+
+    
+.midHomeSection{
+    margin-left: 100px;
+    
+    display: flex;
+    justify-content: space-between;
+}
+
+}
+
+
+
+
+
+
+@media screen and (max-width: 750px) {
+    .caroImg{
+        width: 350px !important;
+    }
+
+    #navBarList{
+        display: flex !important;
+        flex-direction: row !important;
+    }
+
+    .navBarItem{
+        margin: 0 10px 0 10px;
+        font-size: xx-small !important;
+    }
+
+}
