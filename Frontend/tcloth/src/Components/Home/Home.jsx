@@ -7,7 +7,8 @@ import { Search } from "@mui/icons-material";
 import { WhatsApp } from "@mui/icons-material";
 import { Favorite } from "@mui/icons-material";
 import { PermIdentity } from "@mui/icons-material";
-import Carousel1 from '../../assets/Carousels/Caro1.png'
+import Carousel1 from '../../assets/Carousels/Caro1.png';
+import MidSecImg from '../../assets/ContentImages/MidSection.png';
 
 function Home() {
 
@@ -21,7 +22,7 @@ function Home() {
   return(
     <div className="container-fluid">
 
-      {/*Logo an top section*/}
+      {/*Logo and top section*/}
         <div className="container-fluid" id="topSection">
             <div className="logo">
                 <img src={BrandLogo} alt="BrandLogo" />
@@ -56,7 +57,7 @@ function Home() {
 
 
         {/*Logo an top section for mobiles*/}
-       {isMobileIconOpen && <div className="icons-mobile"  style={{marginTop: "20px"}}>
+       {isMobileIconOpen && <div className="icons-mobile">
                 <ul style={{listStyleType: "none"}}>
                     <li className="iconItem"><Search /> Search</li>
                     <hr />
@@ -76,10 +77,10 @@ function Home() {
 
          <div className="container">
             <div className="navBar">
-            <nav className="navbar-expand-lg">
+            <nav className="navbar-expand-lg navBarrr">
                 <div className="container-fluid">
                     
-                    <div> 
+                    <div className="navBarUlList"> 
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 " id="navBarList" style={{cursor: "pointer"}}>
                             <li className="nav-item">
                             <a className="nav-link navBarItem" aria-current="page" href="#">WOMEN</a>
@@ -142,23 +143,25 @@ function Home() {
 
          {/*Mid Home Section*/}
          <div className="container-fluid midHomeSection">
-            <div style={{color: "#693621"}}>
-                <h1 >CONSCIOUS LUXURY<br /> FOR YOU</h1>
+            <div style={{color: "#693621"}} className="midSecContent">
+                <h1 className="midSecHeading">CONSCIOUS LUXURY<br /> FOR YOU</h1>
                 <br />
-                <p style={{ fontWeight: "500", opacity: "0.7"}}>
+                <p style={{ fontWeight: "500", opacity: "0.7"}} className="midSecText">
                    At Anita Dongre, we design elegant,<br />
                    effortless pieces that suit every occasion.<br />
                    All our creations are rooted in conscious<br />
                    luxury, and contemporary interpretations of craft.
                 </p> <br />     
 
-                <button type="button" class="btn btn-lg" style={{backgroundColor: "#693621", color:"white"}}>Shop Now</button>
+                <button type="button" className="btn btn-lg midSecShopNowBtn" style={{backgroundColor: "#693621", color:"white"}}>Shop Now</button>
+            </div> <br />
+
+
+
+
+            <div>
+                <img src={MidSecImg} alt="" className="midSecImg"/>
             </div>
-
-
-
-
-            <div>Image</div>
          </div>
 
     </div>
