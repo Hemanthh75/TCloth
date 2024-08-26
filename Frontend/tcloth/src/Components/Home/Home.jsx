@@ -9,6 +9,7 @@ import { Favorite } from "@mui/icons-material";
 import { PermIdentity } from "@mui/icons-material";
 import Carousel1 from '../../assets/Carousels/Caro1.png';
 import MidSecImg from '../../assets/ContentImages/MidSection.png';
+import Carousel from "../WomenCollectionsCarousel/Carousel";
 
 function Home() {
 
@@ -163,6 +164,12 @@ function Home() {
                 <img src={MidSecImg} alt="" className="midSecImg"/>
             </div>
          </div>
+
+
+
+
+         {/* Women Collections Section */}
+         <Carousel />
 
     </div>
   )
