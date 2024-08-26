@@ -1,0 +1,193 @@
+.CollectionMid{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.JewelerySection, .MenWearSection{
+    margin-top: 50px;
+}
+
+.JeweImage{
+    height: 500px;
+    width: 1000px;
+    object-fit: contain;
+}
+
+
+.menWearImg{
+    height: 420px;
+    width: 1000px;
+    object-fit: contain;
+}
+
+.menWearButton{
+    background-color: black;
+    margin-left: -300px;
+    margin-top: 300px;
+    background-color: #693621;
+    color: white;
+}
+
+
+
+
+@media screen and (max-width: 319px) {
+   
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 374px){
+    .JeweImage{
+        height: 300px;
+        width: 300px;
+        object-fit: contain;
+        margin-left: -10px;
+    }
+
+    .menWearImg{
+        height: 300px;
+        width: 300px;
+        object-fit: contain;
+        margin-top: -150px;
+        margin-left: -10px;
+        z-index: -1;
+    }
+
+    .menWearButton{
+        height: 30px;
+        width: 100px;
+        font-size: 11px;
+        margin-top: -10px;
+        z-index: 1;
+        margin-left: -120px;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 424px) {
+    .JeweImage{
+        height: 330px;
+        width: 330px;
+        object-fit: contain;
+        margin-left: -10px;
+    }
+
+    .menWearImg{
+        height: 330px;
+        width: 330px;
+        object-fit: contain;
+        margin-top: -150px;
+        margin-left: -10px;
+        z-index: -1;
+    }
+
+    .menWearButton{
+        height: 30px;
+        width: 100px;
+        font-size: 11px;
+        margin-top: -10px;
+        z-index: 1;
+        margin-left: -120px;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 767px) {
+    .JeweImage{
+        height: 350px;
+        width: 350px;
+        object-fit: contain;
+        margin-left: -10px;
+    }
+
+    .menWearImg{
+        height: 370px;
+        width: 370px;
+        object-fit: contain;
+        margin-top: -150px;
+        margin-left: -10px;
+        z-index: -1;
+    }
+
+    .menWearButton{
+        height: 30px;
+        width: 100px;
+        font-size: 11px;
+        margin-top: -10px;
+        z-index: 1;
+        margin-left: -120px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .CollectionMid{
+        margin-left: 40px;
+    }
+    .JeweImage{
+        height: 550px;
+        width: 550px;
+        object-fit: contain;
+        margin-left: -10px;
+    }
+    
+    .menWearImg{
+        height: 550px;
+        width: 550px;
+        object-fit: contain;
+        margin-top: -150px;
+        margin-left: -10px;
+        z-index: -1;
+    }
+
+    .menWearButton{
+        height: 30px;
+        width: 100px;
+        font-size: 11px;
+        margin-top: -10px;
+        z-index: 1;
+        margin-left: -120px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+
+    .CollectionMid{
+        margin-left: 40px;
+    }
+        
+    #WomenCaro1, #WomenCaro2, #WomenCaro3, #WomenCaro4 {
+        transition: transform 0.7s ease; /* Smooth scaling effect */
+    }
+    
+    #WomenCaro1:hover, #WomenCaro2:hover,#WomenCaro3:hover, #WomenCaro4:hover{
+        transform: scale(1.5, 1);
+        cursor: pointer;
+    }
+
+    .menWearImg{
+        margin-left: -150px;
+    }
+
+}
+
+
+@media screen and (min-width: 1440px) and (max-width: 2559px){
+
+    #WomenCaro1, #WomenCaro2, #WomenCaro3, #WomenCaro4 {
+        transition: transform 0.7s ease; /* Smooth scaling effect */
+    }
+    
+    #WomenCaro1:hover, #WomenCaro2:hover,#WomenCaro3:hover, #WomenCaro4:hover{
+        transform: scale(1.5, 1);
+        cursor: pointer;
+    }
+
+    .menWearImg{
+        height: 900px;
+        width: 900px;
+        margin-top: -90px;
+        margin-left: -150px;
+    }
+
+
+}
