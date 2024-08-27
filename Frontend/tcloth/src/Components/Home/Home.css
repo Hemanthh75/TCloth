@@ -413,7 +413,7 @@ body {
     .midHomeSection{
         margin-left: 110px;   
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
     }
 
     .midSecHeading{
@@ -423,6 +423,8 @@ body {
     .midSecText{
         font-size: 25px;
     }
+
+    
 
     .midSecImg{
         max-width: 85%;
