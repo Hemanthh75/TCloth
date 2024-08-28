@@ -10,6 +10,9 @@ import MenWearOne from '../../assets/MidSectionImages/MensWear/MenWearOne.png';
 import MenWearTwo from '../../assets/MidSectionImages/MensWear/MenWearTwo.png';
 import Slide4Img from '../../assets/MidSectionImages/4thSlide/Image1.png';
 import Slide5Img from '../../assets/MidSectionImages/5thSlide/Image1.png';
+import Slide6Img from '../../assets/MidSectionImages/6thSlide/Image1.png';
+import Slide7Img1 from '../../assets/MidSectionImages/7thSlide/Image1.png';
+import Slide7Img2 from '../../assets/MidSectionImages/7thSlide/Image2.png'
 
 
 const Carousel = () => {
@@ -63,7 +66,7 @@ const Carousel = () => {
             <button type="button" className="btn slide4btn"><p className='slide4BtnText'>Shop Now</p></button>  
         </div>
 
-        {/*4th Slide*/}
+        {/*5th Slide*/}
         <div className="container-fluid Slide5th">
             <div style={{color: "#693621"}} className="Slide5Content">
                 <h1 className="Slide5Heading">THE WEDDING<br /> EDIT</h1>
@@ -79,7 +82,41 @@ const Carousel = () => {
             <div>
                 <img src={Slide5Img} alt="" className="Slide5Img"/>
             </div>
-         </div>
+        </div>
+
+        {/*6th Slide*/}
+        <div style={{color: "#693621"}} className='container-fluid Slide6th'>
+            <div  className='Slide6Content'>
+                <h1 className='Slide6Heading'>Exquisite <br /> Traditional Wear</h1>
+                <p className='Slide6Text'>Celebrate the richness of cultural heritage <br />
+                   with our finely crafted ethnic attire. <br />
+                   Designed for the modern woman who cherishes tradition, our clothing collection <br />                
+                   offers a perfect blend of classic elegance and <br />
+                   contemporary style</p>
+            </div>
+
+
+            <div >
+              <img src={Slide6Img} alt="Slide6Image..." className='Slide6Image'/>
+              <button className='btn Slide6ShopNowbtn'><p className='slide6BtnText'>Shop Now</p></button>
+            </div>
+        </div>
+
+        {/*7th Slide*/}
+        <div className='conatiner-fluid Slide7' style={{color: "#693621"}}>
+          <div>
+            <img src={Slide7Img1} alt="Slide7Img1" className='slide7Img'/>
+            <h1 className='Slide7Heading' id='Slide7Heading1'>Graceful Festive Attire <br /><hr/></h1>
+            <p className='Slide7Text' id='Slide7Text1'>A curated collection of occasion and <br />
+            everyday styles.</p>
+          </div>
+          <div>
+            <img src={Slide7Img2} alt="Slide7Img2"  className='slide7Img'/>
+            <h1 className='Slide7Heading' id='Slide7Heading2'>Classy Ethnic Wear <br /><hr /></h1>
+            <p className='Slide7Text' id='Slide7Text2'>Signature wear in  kaleidoscope colors,<br />
+            nocturnal blooms and swaying silhouettes. </p>
+            </div>
+        </div>
 
     </div>
   )
