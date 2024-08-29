@@ -12,7 +12,9 @@ import Slide4Img from '../../assets/MidSectionImages/4thSlide/Image1.png';
 import Slide5Img from '../../assets/MidSectionImages/5thSlide/Image1.png';
 import Slide6Img from '../../assets/MidSectionImages/6thSlide/Image1.png';
 import Slide7Img1 from '../../assets/MidSectionImages/7thSlide/Image1.png';
-import Slide7Img2 from '../../assets/MidSectionImages/7thSlide/Image2.png'
+import Slide7Img2 from '../../assets/MidSectionImages/7thSlide/Image2.png';
+import MapImage from '../../assets/MidSectionImages/8thSlide/MapImage.png'
+import Footer from '../Footer/Footer';
 
 
 const Carousel = () => {
@@ -117,6 +119,14 @@ const Carousel = () => {
             nocturnal blooms and swaying silhouettes. </p>
             </div>
         </div>
+
+        {/*8th Slide*/}
+        <div className='mapSection' style={{color: "#693621"}}>
+            <h1 className='mapSecHeading'>Visit us now</h1>
+            <img src={MapImage} alt="Map Image" className='mapSecImage'/>
+        </div>
+
+        <Footer />
 
     </div>
   )

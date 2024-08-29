@@ -170,6 +170,13 @@
         margin-top: 2px;
     }
 
+    .mapSecImage{
+        height: 250px;
+        width: 250px;
+        object-fit: contain;
+        margin-top: -30px;
+    }
+
 }
 
 @media screen and (min-width: 375px) and (max-width: 424px) {
@@ -295,7 +302,12 @@
         font-size: 12px;
     }
 
-
+    .mapSecImage{
+        height: 280px;
+        width: 280px;
+        object-fit: contain;
+        margin-top: -30px;
+    }
 }
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
@@ -423,6 +435,13 @@
 
     #Slide7Text2{
         margin-top: 20px;
+    }
+
+    .mapSecImage{
+        height: 320px;
+        width: 320px;
+        object-fit: contain;
+        margin-top: -30px;
     }
 }
 
