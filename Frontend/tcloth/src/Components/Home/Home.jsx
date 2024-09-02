@@ -10,10 +10,11 @@ import { PermIdentity } from "@mui/icons-material";
 import Carousel1 from '../../assets/Carousels/Caro1.png';
 import MidSecImg from '../../assets/ContentImages/MidSection.png';
 import Carousel from "../WomenCollectionsCarousel/Carousel";
+import ShopNow from "../ShopNowButton/ShopNow";
 
 function Home() {
 
-    const[isMobileIconOpen, setIsMobileIconOpen] = useState(false)
+    const[isMobileIconOpen, setIsMobileIconOpen] = useState(false);
 
     function handleIconBar(e){
         setIsMobileIconOpen(!isMobileIconOpen);
@@ -41,7 +42,7 @@ function Home() {
                             <a className="nav-link active" aria-current="page" href="#"><Search /></a>
                         </li>
                         <li className="nav-item icon">
-                            <a className="nav-link active" aria-current="page" href="#"><WhatsApp /></a>
+                            <a className="nav-link active" aria-current="page" href="https://wa.me/919028875810"><WhatsApp /></a>
                         </li>
                         <li className="nav-item icon">
                             <a className="nav-link active" aria-current="page" href="#"><Favorite /></a>
@@ -51,18 +52,22 @@ function Home() {
                         </li>
                     </ul>
                 </div>
+
+
                 </div>
             </nav>
-
+ 
         </div>
 
 
-        {/*Logo an top section for mobiles*/}
+
+
+                                               {/*Logo an top section for mobiles*/}
        {isMobileIconOpen && <div className="icons-mobile">
                 <ul style={{listStyleType: "none"}}>
                     <li className="iconItem"><Search /> Search</li>
                     <hr />
-                    <li className="iconItem"><WhatsApp /> WhatsApp</li>
+                    <li className="iconItem"><a href="https://wa.me/919028875810" style={{textDecoration:"none", color: "black"}}><WhatsApp /> WhatsApp</a></li>
                     <hr />
                     <li className="iconItem"><Favorite /> Favorite</li>
                     <hr />
@@ -70,8 +75,6 @@ function Home() {
                     <hr />
                 </ul>
         </div>} 
-
-
 
 
          {/*Navbar and carousol section*/}
@@ -154,7 +157,7 @@ function Home() {
                    luxury, and contemporary interpretations of craft.
                 </p> <br />     
 
-                <button type="button" className="btn btn-lg midSecShopNowBtn" style={{backgroundColor: "#693621", color:"white"}}>Shop Now</button>
+                <div className="midSecShopNowBtn"><ShopNow /></div>
             </div> <br />
 
 

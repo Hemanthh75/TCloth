@@ -15,6 +15,7 @@ import Slide7Img1 from '../../assets/MidSectionImages/7thSlide/Image1.png';
 import Slide7Img2 from '../../assets/MidSectionImages/7thSlide/Image2.png';
 import MapImage from '../../assets/MidSectionImages/8thSlide/MapImage.png'
 import Footer from '../Footer/Footer';
+import ShopNow from "../ShopNowButton/ShopNow";
 
 
 const Carousel = () => {
@@ -51,22 +52,32 @@ const Carousel = () => {
 
         {/*2nd Slide*/}
         <div className='JewelerySection'>
-          {jewImg ? (<img src={jewImage1} onClick={handleJewClick} alt='Jew1' className='JeweImage'/>) : (<img src={jewImage2} onClick={handleJewClick} alt='Jew2' className='JeweImage'/>)}
+        {menWearImg ? (<img src={MenWearOne} onClick={handleMenWear} alt='MewnW1' className='JeweImage'></img>) : (<img src={MenWearTwo} onClick={handleMenWear} alt='MenW2' className='JeweImage'/>)}
+          {/*{jewImg ? (<img src={jewImage1} onClick={handleJewClick} alt='Jew1' className='JeweImage'/>) : (<img src={jewImage2} onClick={handleJewClick} alt='Jew2' className='JeweImage'/>)}  */}        
+          <div className="Slide2ShopNowbtn"><ShopNow /></div>
+        </div>
+
+        <div className='JewelerySection'>
+        <img src={Slide4Img} alt="Slide4Img" className='JeweImage'/>
+          {/*{jewImg ? (<img src={jewImage1} onClick={handleJewClick} alt='Jew1' className='JeweImage'/>) : (<img src={jewImage2} onClick={handleJewClick} alt='Jew2' className='JeweImage'/>)}  */}        
+          <div className="Slide2ShopNowbtn"><ShopNow /></div>
         </div>
 
 
         {/*3rd Slide*/}
-        <div className='MenWearSection'>
-          {menWearImg ? (<img src={MenWearOne} onClick={handleMenWear} alt='MewnW1' className='menWearImg'></img>) : (<img src={MenWearTwo} onClick={handleMenWear} alt='MenW2' className='menWearImg'/>)}
-          <button type="button" className="btn menWearButton"><p className='menswearBtnText'>Shop Now</p></button>         
-        </div>
+        {/*<div className='MenWearSection'>
+         <div className='menWearImageCon'>
+           {menWearImg ? (<img src={MenWearOne} onClick={handleMenWear} alt='MewnW1' className='menWearImg'></img>) : (<img src={MenWearTwo} onClick={handleMenWear} alt='MenW2' className='menWearImg'/>)}
+          </div> 
+        </div>*/}
+
 
         
-        {/*4th Slide*/}
+        {/*4th Slide
         <div className='Slide4'>
             <img src={Slide4Img} alt="Slide4Img" className='slide4Image'/>
             <button type="button" className="btn slide4btn"><p className='slide4BtnText'>Shop Now</p></button>  
-        </div>
+        </div>*/}
 
         {/*5th Slide*/}
         <div className="container-fluid Slide5th">
@@ -77,14 +88,14 @@ const Carousel = () => {
                     Timeless lehengas handcrafted in <br />
                     Pichhwari,Bandhani and Benarasi
                 </p> <br />     
-
-                <button type="button" className="btn btn-lg Slide5ShopNowBtn" style={{backgroundColor: "#693621", color:"white"}}>Shop Now</button>
             </div> <br />
 
             <div>
                 <img src={Slide5Img} alt="" className="Slide5Img"/>
             </div>
         </div>
+        
+        <div className="Slide2ShopNowbtn" id='Slide2ShopNowbtn'><ShopNow /></div>
 
         {/*6th Slide*/}
         <div style={{color: "#693621"}} className='container-fluid Slide6th'>
@@ -127,6 +138,8 @@ const Carousel = () => {
         </div>
 
         <Footer />
+
+
 
     </div>
   )
