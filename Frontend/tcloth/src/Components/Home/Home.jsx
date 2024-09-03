@@ -87,25 +87,25 @@ function Home() {
                     <div className="navBarUlList"> 
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 " id="navBarList" style={{cursor: "pointer"}}>
                             <li className="nav-item">
-                            <a className="nav-link navBarItem" aria-current="page" href="#">WOMEN</a>
+                            <a className="nav-link navBarItem" aria-current="page" href="#WomenSectionCaro">WOMEN</a>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link navBarItem" aria-current="page" href="#">MEN</a>
+                            <a className="nav-link navBarItem" aria-current="page" href="#MenSectionCaro">MEN</a>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link navBarItem" aria-current="page" href="#">KIDS</a>
+                            <a className="nav-link navBarItem" aria-current="page" href="#MapSection">KIDS</a>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link navBarItem" aria-current="page" href="#">CAREER</a>
+                            <a className="nav-link navBarItem" aria-current="page" href="#MapSection">CAREER</a>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link navBarItem" aria-current="page" href="#">SALE</a>
+                            <a className="nav-link navBarItem" aria-current="page" href="#MapSection">SALE</a>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link navBarItem" aria-current="page" href="#">ABOUT</a>
+                            <a className="nav-link navBarItem" aria-current="page" href="#MapSection">ABOUT</a>
                             </li>
                             <li className="nav-item">
-                            <a className="nav-link navBarItem" aria-current="page" href="#">BLOG</a>
+                            <a className="nav-link navBarItem" aria-current="page" href="#MapSection">BLOG</a>
                             </li>
                         </ul>
                     

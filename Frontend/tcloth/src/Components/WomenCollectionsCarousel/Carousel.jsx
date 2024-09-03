@@ -4,8 +4,6 @@ import WomenCaro1 from '../../assets/MidSectionImages/WomenCarouselSection/Women
 import WomenCaro2 from '../../assets/MidSectionImages/WomenCarouselSection/WomenCaro2.png';
 import WomenCaro3 from '../../assets/MidSectionImages/WomenCarouselSection/WomenCaro3.png';
 import WomenCaro4 from '../../assets/MidSectionImages/WomenCarouselSection/WomenCaro4.png';
-import jewImage1 from '../../assets/MidSectionImages/JeweleryImages/JeweleryOne.png';
-import jewImage2 from '../../assets/MidSectionImages/JeweleryImages/JeweleryTwo.png';
 import MenWearOne from '../../assets/MidSectionImages/MensWear/MenWearOne.png';
 import MenWearTwo from '../../assets/MidSectionImages/MensWear/MenWearTwo.png';
 import Slide4Img from '../../assets/MidSectionImages/4thSlide/Image1.png';
@@ -20,12 +18,10 @@ import ShopNow from "../ShopNowButton/ShopNow";
 
 const Carousel = () => {
 
-  const[jewImg, setJewImg] = useState(true);
+
   const[menWearImg, setMenWearImg] = useState(true);
 
-  function handleJewClick(){
-    setJewImg(!jewImg)
-  }
+  
 
   function handleMenWear(){
     setMenWearImg(!menWearImg);
@@ -38,7 +34,7 @@ const Carousel = () => {
 
 
       {/*1st Slide*/}
-        <div className='womenCollectionSection'> 
+        <div className='womenCollectionSection' id='WomenSectionCaro'> 
             <h5><a href="" style={{color: "black"}}>Shop By Category</a></h5>
             <span style={{color: "#693621"}}><strong style={{fontSize: "50px"}}>READY</strong>  to wear</span>
             <div className='womMidCollImg'>
@@ -51,7 +47,7 @@ const Carousel = () => {
 
 
         {/*2nd Slide*/}
-        <div className='JewelerySection'>
+        <div className='JewelerySection' id='MenSectionCaro'>
         {menWearImg ? (<img src={MenWearOne} onClick={handleMenWear} alt='MewnW1' className='JeweImage'></img>) : (<img src={MenWearTwo} onClick={handleMenWear} alt='MenW2' className='JeweImage'/>)}
           {/*{jewImg ? (<img src={jewImage1} onClick={handleJewClick} alt='Jew1' className='JeweImage'/>) : (<img src={jewImage2} onClick={handleJewClick} alt='Jew2' className='JeweImage'/>)}  */}        
           <div className="Slide2ShopNowbtn"><ShopNow /></div>
@@ -132,9 +128,9 @@ const Carousel = () => {
         </div>
 
         {/*8th Slide*/}
-        <div className='mapSection' style={{color: "#693621"}}>
+        <div className='mapSection' id='MapSection' style={{color: "#693621"}}>
             <h1 className='mapSecHeading'>Visit us now</h1>
-            <img src={MapImage} alt="Map Image" className='mapSecImage'/>
+            <img src={MapImage} style={{cursor: "pointer"}} alt="Map Image" className='mapSecImage' onClick={() => window.open('https://maps.app.goo.gl/3vZaiY845nKGLUZ69', '_blank')}/>
         </div>
 
         <Footer />
