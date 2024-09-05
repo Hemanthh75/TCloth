@@ -25,6 +25,8 @@ body {
     width: 100%;
     z-index: 999;
     background-color: white;
+    margin-left: -20px !important;
+    padding-left: 20px !important;
 }
 
 #icons-desktop {
