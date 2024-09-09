@@ -418,7 +418,60 @@ body {
         max-height: 85%;
         height: auto;
         width: auto;
-        margin-left: 157px;
+        margin-left: 100px;
+    }
+
+    .carousel-inner{
+        margin-top: 110px;
+        margin-left: -20px;
+    }
+    .navBarUlList{
+        padding-left: 5px;
+    }
+
+    .navBar{       
+         margin-left: -20px;
+    }
+    
+    
+    .midHomeSection{
+        margin-left: 50px;   
+        display: flex;
+        justify-content: center;
+    }
+
+    .midSecHeading{
+        font-size: 50px;
+    }
+
+    .midSecText{
+        font-size: 25px;
+    }
+
+    
+
+    .midSecImg{
+        max-width: 85%;
+        max-height: 85%;
+        height: auto;
+        width: auto;
+    }
+
+}
+
+
+@media screen and (min-width: 2560px) {
+
+    .carouselss{
+        width: 1500px;
+        height: 650px;
+    }
+    .caroImg{
+        max-width: 90%;
+        max-height: 90%;
+        height: 100%;
+        width: 100%;
+        margin-left: 60px;
     }
 
     .carousel-inner{
@@ -458,5 +511,3 @@ body {
     }
 
 }
-
-

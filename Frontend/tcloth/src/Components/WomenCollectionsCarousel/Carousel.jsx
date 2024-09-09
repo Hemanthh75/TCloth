@@ -107,7 +107,6 @@ const Carousel = () => {
 
             <div >
               <img src={Slide6Img} alt="Slide6Image..." className='Slide6Image'/>
-              <button className='btn Slide6ShopNowbtn'><p className='slide6BtnText'>Shop Now</p></button>
             </div>
         </div>
 
